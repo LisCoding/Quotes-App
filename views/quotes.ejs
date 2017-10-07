@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quotes</title>
+  </head>
+  <body>
+    <h1>Here are the awesome quotes!</h1>
+    <div class="">
+      <% for (var x in users_quotes) { %>
+       <h3>"<%= users_quotes[x].quote %>"</h3>
+       <h4>-<%= users_quotes[x].name %> at <%= moment(users_quotes[x].createdAt).format( 'h:mma MMMM D YYYY') %></h4>
+       <hr>
+   <% } %>
+    </div>
+  </body>
+</html>
